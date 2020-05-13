@@ -22,7 +22,7 @@
 
         <div class="form-group">
                 <label for="name" class="color-w gf">MAIN</label>
-            <textarea name="body" value="{{ $post->body }}" class="form-control input" autofocus rows="6"></textarea>
+            <textarea name="body" value="{{ $post->body }}" class="form-control input" rows="6"></textarea>
         </div>
 
         <input type="submit" class="bt gf" value="Upgrade">

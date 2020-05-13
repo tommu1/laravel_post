@@ -2,6 +2,8 @@ body{
     box-sizing: border-box;
     font-size:30px;
     text-align:center;
+    font-family: 'Geo', "Sawarabi Mincho", sans-serif; 
+    word-break: normal;
 }
 
 a {
@@ -21,8 +23,8 @@ td{
     color: white;
 }
 
-.tail1{
-background-color: #99AFC7;
+.tail1:hover{
+    background-color: #0a3d62;
 }
 
 .tail2{
@@ -101,12 +103,11 @@ color: red;
 }
 
 .show-tail1{
-    background-color: #99AFC7;
+
 }
 
 .show-tail2{
-    background-color: #3C5B80;
-    height: 400px;
+    max-width: 60%;
 }
 
 .showA{
@@ -133,3 +134,4 @@ color: red;
     font-family: 'Geo', sans-serif;
     color: #eb4d4b;
 }
+
