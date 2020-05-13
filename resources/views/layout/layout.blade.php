@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>laravel kensyuu</title>
     <script src="{{ asset('/js/app.js') }}" defer></script>
-    <link href="{{ asset('sass/app.scss') }}" rel="stylesheet">
+    <link href="{{ asset('/sass/app.scss') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
 </head>
 

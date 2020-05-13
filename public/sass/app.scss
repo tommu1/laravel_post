@@ -4,16 +4,25 @@ body{
     text-align:center;
 }
 
-.btn a{
-    color:white;
+a {
+    text-decoration: none;
 }
 
-a {
-    color: black;
+a:hover{
+    text-decoration: none;
+}
+
+th{
+    color: white;
+}
+
+td{
+    font-size: 18px;
+    color: white;
 }
 
 .tail1{
-background-color: palegreen;
+background-color: #99AFC7;
 }
 
 .tail2{
@@ -56,13 +65,13 @@ color: red;
 
 .bt{
     margin-top: 20px;
-    width:180px;
+    width: 200px;
     height: 40px;
     background: none;
-    border:2px solid;
-    font-size: 16px;
+    border: 3px solid;
+    font-size: 22px;
     cursor: pointer;
-    transition: 0.5s ;
+    transition: 0.5s;
 }
 
 .bt:hover{
@@ -72,4 +81,55 @@ color: red;
 
 .mainA{
     background-color: #313840;
+    min-height: 100vh;
+}
+
+.mainA-bt{
+    margin: 0 auto;
+}
+
+.pt-4rem{
+    padding-top: 4rem;
+}
+
+.mt-4rem{
+    margin-top: 4rem;
+}
+
+.pt-6rem{
+    padding-top: 6rem;
+}
+
+.show-tail1{
+    background-color: #99AFC7;
+}
+
+.show-tail2{
+    background-color: #3C5B80;
+    height: 400px;
+}
+
+.showA{
+    background-color: #313840;
+    height: 100vh;
+}
+
+.gf-edit{
+    font-family: 'Geo', sans-serif;
+    color: #4a69bd;
+    vertical-align: middle;
+    a{
+        text-decoration: none;
+    }
+}
+
+.gf-edit:hover{
+    a{
+        text-decoration: underline;
+    }
+}
+
+.gf-destroy{
+    font-family: 'Geo', sans-serif;
+    color: #eb4d4b;
 }

@@ -3,41 +3,31 @@
 @section("content")
 
 <style>
-.mt-6{
-    margin-top: 9rem;
-}
 
-.tail1{
-    background-color: #badc58;
-}
-
-.tail2{
-    background-color: #6ab04c;
-}
 </style>
 
-
-<div class="container">
-    <div class="panel panel-default mt-6">
-            <table class="table table-striped table-hover m-3 text-center">
+<div class="showA">
+    <div class="container">
+        <div class="panel panel-default pt-6rem">
+            <table class="table table-striped table-hover text-center">
                 <tr>
-                <td class="tail1">{{ $post -> title }}</td>
-            </tr>
-            <tr>
-                <td class="tail2">{{ $post -> body }}</td>
-            </tr>
+                    <th class="show-tail1">{{ $post -> title }}</th>
+                </tr>
+                <tr>
+                    <td class="show-tail2">{{ $post -> body }}</td>
+                </tr>
             </table>
+        </div>
+
+
+        <a href="/article/edit/{{$post->id}}"><div class="bt mt-3 gf-edit mainA-bt">edit</div></a>
+
+    <form  method="post" action="/article/destroy/{{ $post->id }}" onSubmit="return Check()">
+        {{ csrf_field() }}
+        <input type="submit" value="delete" class="bt gf-destroy" id="btn-destroy" >
+    </form>
     </div>
-
-
-<a href="/article/edit/{{$post->id}}"><div class="btn btn-primary mt-3">編集</div></a>
-
-<form  method="post" action="/article/destroy/{{ $post->id }}" onSubmit="return Check()">
-    {{ csrf_field() }}
-    <input type="submit" value="削除" class="btn btn-danger btn-destroy" id="btn-destroy" >
-</form>
 </div>
-
 
 <script>
 //     function Check() {
