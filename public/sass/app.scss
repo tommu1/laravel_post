@@ -1,0 +1,75 @@
+body{
+    box-sizing: border-box;
+    font-size:30px;
+    text-align:center;
+}
+
+.btn a{
+    color:white;
+}
+
+a {
+    color: black;
+}
+
+.tail1{
+background-color: palegreen;
+}
+
+.tail2{
+background-color: #82ccdd;
+}
+
+.validation{
+color: red;
+}
+
+.crep{
+    height: 100vh;
+    background-color: #313840;
+    padding-top: 8rem;
+}
+
+.top{
+    font-size: 5rem;
+}
+
+.gf{
+    font-family: 'Geo', sans-serif;
+    color: white;
+}
+
+.color-w{
+    color: white;
+}
+
+.input{
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.input:focus{
+    background: none;
+    color:white;
+}
+
+.bt{
+    margin-top: 20px;
+    width:180px;
+    height: 40px;
+    background: none;
+    border:2px solid;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+.bt:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.mainA{
+    background-color: #313840;
+}

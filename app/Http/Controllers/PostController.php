@@ -60,9 +60,11 @@ class PostController extends Controller
     {
         // $post = Post::findOrFail($id);
 
-        $post = DB::selectOne('select * from posts where id = ?',[$id]);
+        $post = DB::select('select * from posts where id = ?',[$id]);
 
-        return view("article.show",["post" => $post]);
+        // dd($post);
+
+        return view("article.show",["post" => $post[0]]);
     }
 
     /**

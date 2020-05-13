@@ -34,22 +34,21 @@
 
 <form  method="post" action="/article/destroy/{{ $post->id }}" onSubmit="return Check()">
     {{ csrf_field() }}
-    <input type="hidden" name="_token" value="{{csrf_token()}}">
     <input type="submit" value="削除" class="btn btn-danger btn-destroy" id="btn-destroy" >
 </form>
 </div>
 
 
 <script>
-    function Check() {
-        if(confirm("本当に削除しますか？") == true){
-            //削除
-            return true;
-        }else{
-            alert("削除を中止しました");
-            return false;
-        }
-}
+//     function Check() {
+//         if(confirm("本当に削除しますか？")){
+//             //削除
+//             return true;
+//         }else{
+//             alert("削除を中止しました");
+//             return false;
+//         }
+// }
 
 </script>
 </body>
