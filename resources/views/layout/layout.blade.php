@@ -8,11 +8,27 @@
     <title>laravel kensyuu</title>
     <script src="{{ asset('/js/app.js') }}" defer></script>
     <link href="{{ asset('/sass/app.scss') }}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 </head>
 
 <body>
+        <nav class="navbar navbar-secondary bg-secondary">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="top2" href="/article">Poster</a>
+                    </div>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="navitem" href="/article/create">新規作成</a>
+                                </li>
+                            </ul>
+
+                </div>
+        </nav>
+
+
     @yield("content")
 </body>
 </html>

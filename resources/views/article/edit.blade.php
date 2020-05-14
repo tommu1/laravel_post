@@ -2,12 +2,6 @@
 
 @section("content")
 
-<style>
-    .mt-6{
-        margin-top: 10rem;
-    }
-</style>
-
 <body>
     <div class="crep">
         <div class="container">

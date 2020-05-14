@@ -10,7 +10,7 @@
             @error("body")
             <p class="validation">{{ $message }}</p>
             @enderror
-        <div class="container mt-6 form-p">
+        <div class="container form-p">
                 <h1 class="top text-center gf">Poster</h1>
                 <form method="post" action="/article/store" >
                     {{ csrf_field() }}

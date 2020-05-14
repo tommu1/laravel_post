@@ -5,7 +5,7 @@
 <body>
     <div class="mainA">
         <div class="container pb-5">
-            <h2 class="pt-4rem mb-3 gf top">Poster</h2>
+            <h2 class="pt-4 mb-3 gf top">Poster</h2>
             @foreach($posts as $value)
             <a href="/article/{{ $value -> id }}">
                 <table class="table table-hover m-0">
