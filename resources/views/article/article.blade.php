@@ -20,8 +20,8 @@
             </table>
         </a>
             @endforeach
+                <div class="d-flex justify-content-center">{{ $posts->links() }}</div>
             <a href="/article/create"><div class="bt mt-4 gf mainA-bt">create</div></a>
-
         </div>
         
     </div>

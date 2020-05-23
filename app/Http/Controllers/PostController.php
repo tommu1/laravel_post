@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::paginate(8);
         // dd($posts -> toArray());
         return view("article.article", ["posts" => $posts]);
     }
